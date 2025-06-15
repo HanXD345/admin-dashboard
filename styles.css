@@ -21,11 +21,13 @@ header {
     grid-column: 2 / 3;
     display: grid;
     grid-template: 1fr 2fr / 2fr 1fr;
+    justify-items: flex-start;
 }
 
 .header-search-bar {
     display: grid;
     grid-template: 30px / 30px 1fr;
+    justify-self: stretch;
     align-items: center;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -46,6 +48,7 @@ header {
 .profile {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    justify-self: stretch;
     justify-items: center;
     align-items: center;
     font-size: 17px;
@@ -80,7 +83,27 @@ img[alt="Notification Icon"] {
 }
 
 .admin-buttons {
-    background-color: gray;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 20px;
+}
+
+.admin-buttons button {
+    background-color: rgb(210, 226, 231);
+    padding: 15px 40px;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.4s;
+}
+
+.admin-buttons button:hover {
+    background-color: rgb(255, 178, 178);
+    color: black;
+    cursor: pointer;
+    transition: 0.4s;
 }
 
 /* Navigation Styles */
@@ -96,10 +119,20 @@ nav {
 nav h1,
 nav h2 {
     font-size: 40px;
+    transition: 0.4s;
+    border: 1px solid transparent;
+    border-radius: 15px;
 }
 
 nav h2:not(:last-child) {
     padding-bottom: 5px;
+}
+
+nav h2:hover {
+    background-color: rgb(255, 178, 178);
+    color: black;
+    cursor: pointer;
+    transition: 0.4s;
 }
 
 .nav-header img {
