@@ -142,4 +142,49 @@ nav h2:hover {
 /* Main (content) styles */
 main {
     background-color: rgb(230, 225, 225);
+    display: grid;
+    grid-template: 1fr 1fr / 2fr 1fr;
+    padding: 30px 20px;
+}
+
+.projects {
+    grid-row: 1 / 3;
+    display: grid;
+    grid-template-rows: 50px 1fr;
+    margin-right: 20px;
+}
+
+article {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    grid-template-rows: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.card {
+    background-color: white;
+    border-left: 10px solid orange;
+    border-radius: 10px;
+    padding: 20px;
+    display: grid;
+}
+
+.card .icons {
+    align-self: end;
+    justify-self: end;
+    display: grid;
+    grid-template-columns: 30px 30px 30px;
+    gap: 20px;
+}
+
+.card .icons img {
+    padding: 0;
+    transition: 0.4s;
+    border-radius: 5px;
+}
+
+.card .icons img:hover {
+    background-color: lightgray;
+    transition: 0.4s;
+    cursor: pointer;
 }
