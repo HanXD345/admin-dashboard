@@ -69,7 +69,14 @@ img[alt="Notification Icon"] {
 }
 
 .profile-info {
-    background-color: red;
+    display: grid;
+    grid-template-columns: 175px 1fr;
+    align-items: center;
+}
+
+.profile-info img {
+    height: 100px;
+    padding-left: 50px;
 }
 
 .admin-buttons {
