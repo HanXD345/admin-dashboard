@@ -36,7 +36,7 @@ header {
 .header-search-bar input {
     padding: 5px 15px;
     margin-right: 5px;
-    margin-left: 5px;
+    margin-left: 20px;
     border: 1px solid lightgray;
     border-radius: 20px;
     background-color: rgb(233, 233, 233);
