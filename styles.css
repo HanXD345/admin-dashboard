@@ -13,6 +13,7 @@ body {
 img {
     object-fit: cover;
     padding-right: 20px;
+    height: 30px;
 }
 
 /* Header Styles */
@@ -32,10 +33,6 @@ header {
     margin-left: 70px;
 }
 
-.header-search-bar img {
-    height: 30px;
-}
-
 .header-search-bar input {
     padding: 5px 15px;
     margin-right: 5px;
@@ -47,7 +44,28 @@ header {
 }
 
 .profile {
-    background-color: pink;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    font-size: 17px;
+}
+
+.profile span:has(img[alt="Notification Icon"]) {
+    justify-self: end;
+}
+
+img[alt="Notification Icon"] {
+    padding: 0;
+}
+
+.profile img[alt="Profile Icon"] {
+    height: 50px;
+    padding: 0;
+}
+
+.profile h3 {
+    justify-self: start;
 }
 
 .profile-info {
@@ -79,11 +97,6 @@ nav h2:not(:last-child) {
 
 .nav-header img {
     height: 40px;
-}
-
-.nav-links img, 
-.nav-support img {
-    height: 30px;
 }
 
 /* Main (content) styles */
