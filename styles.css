@@ -91,6 +91,7 @@ img[alt="Notification Icon"] {
 
 .admin-buttons button {
     background-color: rgb(210, 226, 231);
+    margin-right: 30px;
     padding: 15px 40px;
     border: 1px solid transparent;
     border-radius: 30px;
